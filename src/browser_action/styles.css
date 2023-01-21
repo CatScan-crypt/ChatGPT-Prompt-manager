@@ -1,0 +1,42 @@
+.popup {
+  position: absolute;
+  z-index: 99999;
+  background: #fff;
+  padding: 10px;
+  width: 100%;
+  min-height: 200px;
+  color: black;
+  top: -250px; /* adjust as necessary */
+  left: 20px; /* adjust as necessary */
+  display: grid;
+  grid-template-rows: 50px auto 50px;
+}
+
+.header {
+  grid-row: 1 / 2;
+  border-bottom: 3px solid #ccc;
+  height: 30px;
+}
+
+.popup-content {
+  grid-row: 2 / 3;
+}
+
+.footer {
+  grid-row: 3 / 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.activate-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.save-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
